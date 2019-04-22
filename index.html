@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <title>AnnaLouBakes</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="https://www.w3schools.com/lib/w3-colors-2019.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto"
+    rel="stylesheet"
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Playball"
+    rel="stylesheet"
+  />
+  <style>
+    body,
+    html {
+      height: 100%;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    #display-title {
+      font-family: 'Playball', cursive;
+    }
+
+    .bgimg {
+      background-position: center;
+      background-size: cover;
+      background-image: url('/sprinkles.jpg');
+      min-height: 75%;
+    }
+
+    .menu {
+      display: none;
+    }
+  </style>
+
+  <body>
+    <!-- Links (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-row w3-padding w3-2019-fruit-dove  w3-round-small">
+        <div class="w3-col s3">
+          <a
+            href="#"
+            class="w3-button w3-block w3-2019-bluestone  w3-round-small"
+            >HOME</a
+          >
+        </div>
+        <div class="w3-col s3">
+          <a
+            href="#about"
+            class="w3-button w3-block w3-2019-bluestone  w3-round-small"
+            >ABOUT</a
+          >
+        </div>
+        <div class="w3-col s3">
+          <a
+            href="#menu"
+            class="w3-button w3-block w3-2019-bluestone  w3-round-small"
+            >GALLERY</a
+          >
+        </div>
+        <div class="w3-col s3">
+          <a
+            href="#where"
+            class="w3-button w3-block w3-2019-bluestone  w3-round-small"
+            >ORDER</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+      <div
+        class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small"
+      ></div>
+      <div class="w3-display-middle w3-center">
+        <span class="w3-text-white" style="font-size:90px" id="display-title"
+          >AnnaLou<br />Bakes</span
+        >
+      </div>
+      <div class="w3-display-bottomright w3-center w3-padding-large"></div>
+    </header>
+
+    <!-- Add a background color and large text to the whole page -->
+    <div class="w3-sand w3-grayscale w3-large">
+      <!-- About Container -->
+      <div class="w3-container" id="about">
+        <div class="w3-content" style="max-width:700px">
+          <h5 class="w3-center w3-padding-64">
+            <span class="w3-tag w3-wide">About AnnaLou Bakes</span>
+          </h5>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            laborum optio quasi necessitatibus vel, repellendus nostrum officiis
+            aliquam obcaecati temporibus enim corrupti quos nemo! Aperiam ut
+            hic, ipsam suscipit modi, totam sint quis commodi consequuntur
+            laborum tempora possimus unde at id repellendus omnis voluptatibus
+            non sed, repudiandae quo deleniti cupiditate.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi et
+            nisi nostrum consectetur. Veniam, quidem rerum. In qui dicta eaque
+            iste nemo consequatur laudantium velit.
+          </p>
+          <div class="w3-panel w3-leftbar w3-light-grey">
+            <p>
+              <i
+                >"Use products from nature for what it's worth - but never too
+                early, nor too late." Fresh is the new sweet.</i
+              >
+            </p>
+            <p>Chef, Coffeeist and Owner: Liam Brown</p>
+          </div>
+          <img
+            src="/frosted.png"
+            style="width:100%;max-width:1000px"
+            class="w3-margin-top"
+          />
+        </div>
+      </div>
+
+      <!-- Contact/Area Container -->
+      <div class="w3-container" id="where" style="padding-bottom:32px;">
+        <div class="w3-content" style="max-width:700px">
+          <h5 class="w3-center w3-padding-48 ">
+            <span class="w3-tag w3-wide ">Order Form</span>
+          </h5>
+
+          <p>
+            For cookie order inquiries please include as much information as
+            possible.
+          </p>
+          <p>
+            Orders are confirmed after you receive a confirmation email from me.
+          </p>
+
+          <form action="/action_page.php" target="_blank">
+            <p>
+              <input
+                class="w3-input w3-padding-16 w3-border"
+                type="text"
+                placeholder="Name"
+                required
+                name="Name"
+              />
+            </p>
+            <p>
+              <input
+                class="w3-input w3-padding-16 w3-border"
+                type="number"
+                placeholder="How many cookies (in dozens)"
+                required
+                name="People"
+              />
+            </p>
+
+            <p>
+              <input
+                class="w3-input w3-padding-16 w3-border"
+                type="text"
+                placeholder="Date and time"
+                required
+                name="date"
+              />
+            </p>
+
+            <p>
+              <input
+                class="w3-input w3-padding-16 w3-border"
+                type="text"
+                placeholder="Order Details"
+                required
+                name="Message"
+              />
+            </p>
+
+            <p>
+              <button class="w3-button w3-2019-fruit-dove" type="submit">
+                SEND MESSAGE
+              </button>
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+      <p>
+        Powered by
+        <a
+          href="https://www.w3schools.com/w3css/default.asp"
+          title="W3.CSS"
+          target="_blank"
+          class="w3-hover-text-green"
+          >w3.css</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      // Tabbed Menu
+      function openMenu(evt, menuName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName('menu');
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = 'none';
+        }
+        tablinks = document.getElementsByClassName('tablink');
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(
+            ' w3-dark-grey',
+            ''
+          );
+        }
+        document.getElementById(menuName).style.display = 'block';
+        evt.currentTarget.firstElementChild.className += ' w3-dark-grey';
+      }
+      document.getElementById('myLink').click();
+    </script>
+  </body>
+</html>
